@@ -17,9 +17,9 @@ class SecondViewController: UIViewController {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
-        
         submitName.text = segueName + "さん"
         submitName.textColor = UIColor.blue
+        submitName.adjustsFontSizeToFitWidth = true
     }
     
     
