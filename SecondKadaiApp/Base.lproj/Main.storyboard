@@ -40,8 +40,8 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="35"/>
                                 <state key="normal" title="決定"/>
                                 <connections>
-                                    <action selector="btnDo:" destination="BYZ-38-t0r" eventType="touchUpInside" id="IyU-VK-FTi"/>
-                                    <segue destination="gko-7V-dKn" kind="show" identifier="SecondViewController" id="Qe1-uf-sCr"/>
+                                    <action selector="btnDo:" destination="BYZ-38-t0r" eventType="touchUpInside" id="WiY-NA-yX5"/>
+                                    <segue destination="gko-7V-dKn" kind="show" identifier="SecondViewController" id="f9o-Oj-hUi"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -64,14 +64,12 @@
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
-                <exit id="23A-x5-hma" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
             <point key="canvasLocation" x="148" y="118"/>
         </scene>
         <!--Second View Controller-->
         <scene sceneID="4Y6-O6-rKU">
             <objects>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="zNM-oL-MR2" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
                 <viewController id="gko-7V-dKn" customClass="SecondViewController" customModule="SecondKadaiApp" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="bxt-XA-ovD">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
@@ -103,7 +101,7 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="35"/>
                                 <state key="normal" title="戻る"/>
                                 <connections>
-                                    <segue destination="23A-x5-hma" kind="unwind" unwindAction="btnDo:" id="k6u-Ue-sfZ"/>
+                                    <segue destination="4zx-X3-CdQ" kind="unwind" unwindAction="btnDo:" id="wbm-ph-k9t"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -127,6 +125,8 @@
                         <outlet property="submitName" destination="tFR-ow-7uj" id="2TT-zM-vd0"/>
                     </connections>
                 </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="zNM-oL-MR2" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <exit id="4zx-X3-CdQ" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
             <point key="canvasLocation" x="869.56521739130437" y="117.85714285714285"/>
         </scene>

@@ -48,15 +48,16 @@ class ViewController: UIViewController{
         present(alertController, animated: true)
     }
 
+    
     @IBAction func btnDo(_ sender:UIStoryboardSegue) {
         if txtName.text == ""{
-              alert(title: "確認",
-              message: "名前を入力してください")
+              alert(title:"確認",
+              message:"名前を入力してください")
             } else{
-              segueToSecondViewController()
+//              segueToSecondViewController()
             }
        }
-    
+
     func segueToSecondViewController(){
         self.performSegue(withIdentifier:"SecondViewController", sender: nil)
     }
