@@ -33,11 +33,7 @@ class ViewController: UIViewController{
         SecondViewController.segueName = txtName.text
     }
     
-    
-//    @IBAction func btnDo(_ sender:UIStoryboardSegue) {
-//
-//    }
-    
+// 名前が入力されていない場合のポップアップのfunction
     func alert(title:String, message:String) {
         alertController = UIAlertController(title: title,
                                    message: message,
@@ -48,19 +44,15 @@ class ViewController: UIViewController{
         present(alertController, animated: true)
     }
 
-    
+//　名前が入力されている場合に限り遷移
     @IBAction func btnDo(_ sender:UIStoryboardSegue) {
         if txtName.text == ""{
               alert(title:"確認",
               message:"名前を入力してください")
             } else{
-//              segueToSecondViewController()
+
             }
        }
 
-    func segueToSecondViewController(){
-        self.performSegue(withIdentifier:"SecondViewController", sender: nil)
-    }
-    
 }
 
